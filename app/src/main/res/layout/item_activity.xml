@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Habit Name -->
+        <TextView
+            android:id="@+id/tvHabitName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Habit Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Habit Time -->
+        <TextView
+            android:id="@+id/tvHabitTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time: 09:00"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="2dp" />
+
+        <!-- Habit Duration -->
+        <TextView
+            android:id="@+id/tvHabitDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duration: 30 mins"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="2dp" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvActivityStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/status_pending"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

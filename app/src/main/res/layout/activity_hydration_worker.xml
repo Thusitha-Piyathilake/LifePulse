@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/bg_mood_gradient">
+
+
+<Switch
+        android:id="@+id/switchHydration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hydration Reminder (every 1 hours)" />
+
+
+    <TextView
+        android:id="@+id/tvCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_reminder_in_00_00_00"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnDrinkWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_drank_water" />
+
+    <Button
+        android:id="@+id/btnViewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_hydration_history"
+        android:layout_marginTop="16dp"/>
+
+
+</LinearLayout>

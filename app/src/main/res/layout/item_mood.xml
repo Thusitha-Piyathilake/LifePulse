@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@color/dark_orange"
+    android:layout_marginBottom="6dp">
+
+    <!-- Emoji -->
+    <TextView
+        android:id="@+id/tvMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🙂"
+        android:textSize="36sp"
+        android:layout_marginEnd="12dp" />
+
+    <!-- Mood text + timestamp -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvMoodText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/peaceful"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMoodTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_27_09_2025_14_13"
+            android:textSize="14sp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!--  Delete Button -->
+    <ImageButton
+        android:id="@+id/btnDeleteMood"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/delete_mood"
+        android:layout_gravity="end"
+        app:tint="@android:color/holo_red_dark" />
+
+</LinearLayout>

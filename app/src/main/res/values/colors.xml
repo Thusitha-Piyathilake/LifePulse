@@ -2,4 +2,29 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="yellow_normal">#FFEB3B</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="colorPrimary">#D5211B</color>
+    <color name="colorSecondary">#7D2324</color>
+    <color name="colorBackground">#F0EFEE</color>
+    <color name="dark_orange">#FF8C00</color>
+    <color name="gray">#B0B0B0</color>
+    <color name="red">#FF0000</color>
+    <color name="primaryGreen">#00FF00</color>
+    <color name="light_yellow">#FFF9C4</color>
+    <color name="dark_yellow">#FBC02D</color>
+    <color name="light_orange">#FFE0B2</color>
+    <color name="blue">#0000FF</color>
+    <!--  Habit Button Colors -->
+    <color name="buttonGold">#FBC02D</color>
+    <color name="buttonGoldPressed">#F9A825</color>
+    <color name="buttonGoldLight">#FFF8E1</color>
+    <!-- Text Colors -->
+    <color name="textOnGold">#7D2324</color>
+    <color name="textOnDark">#FFFFFF</color>
+    <color name="textOnLight">#000000</color>
+    <color name="customPurple">#8E24AA</color>
 </resources>

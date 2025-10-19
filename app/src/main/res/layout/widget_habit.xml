@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/widget_bg">
+
+    <!--  App Title -->
+    <TextView
+        android:id="@+id/tvWidgetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌿 LifePulse"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/yellow_normal"
+        android:layout_marginBottom="6dp" />
+
+    <!--  Progress Text -->
+    <TextView
+        android:id="@+id/tvWidgetProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/progress_0"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="12dp"/>
+
+    <!--  Quick Action Button -->
+    <Button
+        android:id="@+id/btnWidgetQuickLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quick_add_water"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/widget_button_bg"/>
+
+</LinearLayout>

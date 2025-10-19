@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_mood_gradient">
+
+    <!--  Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foot_steps"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!--  Steps PieChart -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/stepsPieChart"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="20dp" />
+
+    <!--  Steps text below chart -->
+    <TextView
+        android:id="@+id/tvSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0_2000_steps"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!--   Burned Calories -->
+    <TextView
+        android:id="@+id/tvCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/burned_0_kcal"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+</LinearLayout>

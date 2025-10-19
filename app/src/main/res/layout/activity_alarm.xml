@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  Background gradient -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_mood_gradient" />
+
+    <!--  Alarm image as background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/alarm"
+    android:scaleType="centerCrop"
+    android:alpha=".9" />
+
+    <!--  Foreground content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!--  Habit Name -->
+        <TextView
+            android:id="@+id/tvHabitName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_for_your_habit"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="48dp" />
+
+        <!--  Stop / Dismiss Button -->
+        <Button
+            android:id="@+id/btnStopAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/turn_off_alarm"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:backgroundTint="@color/dark_orange"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</FrameLayout>

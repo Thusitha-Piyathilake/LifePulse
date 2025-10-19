@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Habit Name -->
+    <EditText
+        android:id="@+id/etHabitName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/habit_name"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Habit Icon -->
+    <ImageView
+        android:id="@+id/ivHabitIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/habit"
+        android:contentDescription="@string/select_icon"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Create Button -->
+    <Button
+        android:id="@+id/btnCreateHabit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_habit"
+        android:backgroundTint="@color/buttonGoldPressed"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

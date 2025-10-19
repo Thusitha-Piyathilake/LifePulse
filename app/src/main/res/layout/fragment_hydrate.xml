@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mood_gradient"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvHydrateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hydrate"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Donut Progress -->
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:id="@+id/progressHydrate"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_below="@id/tvHydrateTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:donut_finished_color="@color/blue"
+        app:donut_unfinished_color="@color/gray"
+        app:donut_finished_stroke_width="15dp"
+        app:donut_unfinished_stroke_width="15dp"
+        app:donut_text_color="@color/black"
+        app:donut_text_size="18sp"
+        android:progress="0"
+        android:max="100" />
+
+    <!-- Total Intake -->
+    <TextView
+        android:id="@+id/tvHydrateAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressHydrate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="@string/_0_ml_0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <!-- Quick Add Buttons (like screenshot) -->
+    <LinearLayout
+        android:id="@+id/layoutQuickAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHydrateAmount"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/btn250ml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_250_ml"
+                android:backgroundTint="@color/blue"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btn500ml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_500_ml"
+                android:backgroundTint="@color/blue"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/btn1000ml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_1000_ml"
+                android:backgroundTint="@color/blue"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/other"
+                android:backgroundTint="@color/blue"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

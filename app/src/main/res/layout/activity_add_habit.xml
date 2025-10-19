@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_mood_gradient">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Habits"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Habits Grid -->
+        <GridLayout
+            android:id="@+id/habitsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <!-- Wake up -->
+            <LinearLayout
+                android:id="@+id/btnWakeUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/wake_up"
+                    android:contentDescription="Wake up icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wake up"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Self-care -->
+            <LinearLayout
+                android:id="@+id/btnSelfCare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/self_care"
+                    android:contentDescription="Self-care icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Self-care"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Nature walk -->
+            <LinearLayout
+                android:id="@+id/btnNatureWalk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/nature_walk"
+                    android:contentDescription="Nature walk icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nature walk"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Eat Fruits and Veggies -->
+            <LinearLayout
+                android:id="@+id/btnEatFruitsVeggies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/eat_fruits_and_veggies"
+                    android:contentDescription="Eat Fruits and Veggies icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eat Fruits and Veggies"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Work/study -->
+            <LinearLayout
+                android:id="@+id/btnWorkStudy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/work_study"
+                    android:contentDescription="Work/study icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Work/study"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Reflect -->
+            <LinearLayout
+                android:id="@+id/btnReflect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/reflect"
+                    android:contentDescription="Reflect icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reflect"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Selection"
+            android:backgroundTint="@color/dark_orange"
+            android:textColor="@color/black"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/btnCustomHabit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom Habit"
+            android:backgroundTint="@color/yellow_normal"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</ScrollView>

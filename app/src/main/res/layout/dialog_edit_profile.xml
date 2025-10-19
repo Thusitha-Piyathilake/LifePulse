@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_mood_gradient">
+
+
+<EditText
+        android:id="@+id/etEditName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name" />
+
+    <EditText
+        android:id="@+id/etEditEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etEditStepsGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Steps Goal"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etEditWaterGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Water Goal (ml)"
+        android:inputType="number" />
+</LinearLayout>

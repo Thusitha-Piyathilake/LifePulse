@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_mood_gradient"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--  Title + Pie Chart -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mood_distribution_last_7_days"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="28dp" />
+
+        <!--  Title + Bar Chart -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mood_counts_per_day"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="28dp" />
+
+        <!--  Title + Line Chart -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/habit_completion_last_7_days"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/habitCompletionChart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="28dp" />
+
+        <!--  Title + Bar Chart (Water Intake) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Water Intake (Last 7 Days)"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartWater"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="28dp" />
+
+        <!--  Title + Bar Chart (Steps) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/steps_progress_last_7_days"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartSteps"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="28dp" />
+
+    </LinearLayout>
+</ScrollView>

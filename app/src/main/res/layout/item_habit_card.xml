@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_habit_button_selector"
+    android:layout_columnWeight="1">
+
+    <!-- Habit Icon -->
+    <ImageView
+        android:id="@+id/ivHabitIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/habit_icon" />
+
+    <!-- Habit Name -->
+    <TextView
+        android:id="@+id/tvHabitName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Habit Name"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Habit Time -->
+    <TextView
+        android:id="@+id/tvHabitTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_08_00"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="2dp"/>
+
+    <!-- Habit Duration -->
+    <TextView
+        android:id="@+id/tvHabitDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/duration_30_mins"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="2dp"/>
+</LinearLayout>

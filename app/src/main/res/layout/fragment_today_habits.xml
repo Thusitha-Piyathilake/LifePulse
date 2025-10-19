@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvTodayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today's Habits"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Habits list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTodayHabits"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"/>
+
+    <!-- Save button -->
+    <Button
+        android:id="@+id/btnSaveHabits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Habits"
+        android:backgroundTint="@color/dark_orange"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

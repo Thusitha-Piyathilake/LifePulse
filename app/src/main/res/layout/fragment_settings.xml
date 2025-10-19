@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mood_gradient">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- User Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:padding="16dp"
+            android:backgroundTint="@android:color/white">
+
+            <TextView
+                android:id="@+id/tvUserInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logged in as:\nUser"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Hydration -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHydration"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hydration_reminder"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Steps History -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStepsHistory"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/steps_history"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Backup -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBackup"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/backup_data"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            app:backgroundTint="@color/buttonGoldPressed"
+            android:textColor="@android:color/white" />
+
+        <!-- Restore -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRestore"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/restore_data"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            app:backgroundTint="@color/buttonGoldPressed"
+            android:textColor="@android:color/white" />
+
+        <!-- Delete Account -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDeleteAccount"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_account"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            app:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white" />
+
+        <!-- Logout -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>

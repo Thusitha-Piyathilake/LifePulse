@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mood_gradient"
+    android:padding="20dp">
+
+    <!--  Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relax"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Timer + Circle -->
+    <FrameLayout
+        android:id="@+id/timerContainer"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/progressCircle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:progress="0"
+            android:max="100"
+            android:text=""
+            app:donut_finished_color="@color/red"
+            app:donut_unfinished_color="@color/gray"
+            app:donut_finished_stroke_width="15dp"
+            app:donut_unfinished_stroke_width="15dp"
+            app:donut_text_color="@android:color/transparent"
+            app:donut_text_size="1sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="00:00"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+    </FrameLayout>
+
+    <!-- ️ Play / Pause button -->
+    <ImageButton
+        android:id="@+id/btnPlayPause"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/timerContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/ic_play"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/play_pause"
+        app:tint="@color/white" />
+
+    <!--  Music selection row -->
+    <LinearLayout
+        android:id="@+id/layoutMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPlayPause"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <!-- Ocean -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnMusic1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_music"
+                android:contentDescription="@string/ocean" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ocean"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Rain -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnMusic2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_music"
+                android:contentDescription="@string/rain" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rain"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Birds -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnMusic3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_music"
+                android:contentDescription="@string/birds" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birds"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Piano -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnMusic4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_music"
+                android:contentDescription="@string/piano" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Piano"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

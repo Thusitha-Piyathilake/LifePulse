@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_mood_gradient">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <include
+            layout="@layout/layout_header" />
+
+        <!--  Month-Year Header with Menu -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <!-- Menu Icon (left) -->
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_menu"
+                android:contentDescription="@string/menu"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"/>
+
+            <!-- Month-Year Text (centered) -->
+            <TextView
+                android:id="@+id/tvMonthYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/september_2025"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <!--  Horizontal date list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerDates"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            android:layout_marginBottom="16dp"/>
+
+        <!--  Habit selection grid -->
+        <GridLayout
+            android:id="@+id/habitsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <!-- Workout -->
+            <LinearLayout
+                android:id="@+id/btnWorkout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/workout"
+                    android:contentDescription="Workout icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_out"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Eat Food -->
+            <LinearLayout
+                android:id="@+id/btnEatFood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/eat"
+                    android:contentDescription="Eat Food icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eat_food"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Music -->
+            <LinearLayout
+                android:id="@+id/btnMusic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/music"
+                    android:contentDescription="Music icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/music"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Art -->
+            <LinearLayout
+                android:id="@+id/btnArt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/art"
+                    android:contentDescription="Art icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/art_and_design"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Traveling -->
+            <LinearLayout
+                android:id="@+id/btnTravel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/traveling"
+                    android:contentDescription="Traveling icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/traveling"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Read Book -->
+            <LinearLayout
+                android:id="@+id/btnReadBook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/read"
+                    android:contentDescription="Read Book icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_book"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Gaming -->
+            <LinearLayout
+                android:id="@+id/btnGaming"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/gaming"
+                    android:contentDescription="Gaming icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gaming"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Mechanic -->
+            <LinearLayout
+                android:id="@+id/btnMechanic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_habit_button_selector"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/mechanic"
+                    android:contentDescription="Mechanic icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanic"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </GridLayout>
+
+        <!--  Container for dynamically added habits (changed to GridLayout) -->
+        <GridLayout
+            android:id="@+id/habitsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true"
+            android:padding="8dp"/>
+
+        <!--  Add Habit Button -->
+        <Button
+            android:id="@+id/btnAddHabit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_habit"
+            android:backgroundTint="@color/dark_orange"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp" />
+
+        <!--  Get Started Button -->
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_started"
+            android:backgroundTint="@color/dark_orange"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

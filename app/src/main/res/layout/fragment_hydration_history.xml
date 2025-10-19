@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_mood_gradient">
+
+
+<!-- Toggle Today / Last 7 Days -->
+    <RadioGroup
+        android:id="@+id/rangeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbToday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/today" />
+
+        <RadioButton
+            android:id="@+id/rbLast7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/last_7_days" />
+    </RadioGroup>
+
+    <!--  Total Intake -->
+    <TextView
+        android:id="@+id/tvTotalIntake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/total_intake_0_ml"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp" />
+
+    <!-- Empty message -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_hydration_logs"
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:paddingTop="4dp" />
+
+    <!-- List of hydration entries -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHydration"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp" />
+
+</LinearLayout>

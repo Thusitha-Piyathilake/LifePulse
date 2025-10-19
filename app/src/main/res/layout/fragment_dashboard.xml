@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_mood_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!--  Title -->
+        <TextView
+            android:id="@+id/tvDashboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_daily_tracker"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp" />
+
+        <!--  Calendar -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/buttonGoldPressed">
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!--  Water Donut -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp">
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/donutWater"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:donut_progress="0"
+                app:donut_finished_color="@color/blue"
+                app:donut_unfinished_color="@color/gray"
+                app:donut_text_color="@color/black"
+                app:donut_text_size="18sp"
+                app:donut_max="100" />
+
+            <TextView
+                android:id="@+id/tvWaterLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/water_intake_0_2000_ml"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!--  Steps Donut -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp">
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/donutSteps"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:donut_progress="0"
+                app:donut_finished_color="@color/dark_orange"
+                app:donut_unfinished_color="@color/gray"
+                app:donut_text_color="@color/black"
+                app:donut_text_size="18sp"
+                app:donut_max="100" />
+
+            <TextView
+                android:id="@+id/tvStepsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/steps_0_5000"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!--  Habit Donut -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp">
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/donutHabits"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:donut_progress="0"
+                app:donut_finished_color="@color/colorPrimary"
+                app:donut_unfinished_color="@color/gray"
+                app:donut_text_color="@color/black"
+                app:donut_text_size="18sp"
+                app:donut_max="100" />
+
+            <TextView
+                android:id="@+id/tvHabitsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daily_progress"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!--  Streak -->
+        <TextView
+            android:id="@+id/tvStreak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_streak_0_days"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!--  Save Button -->
+        <Button
+            android:id="@+id/btnSaveToday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_stats"
+            android:backgroundTint="@color/dark_orange"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

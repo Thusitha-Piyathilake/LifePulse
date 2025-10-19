@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mood_gradient">
+
+
+<!-- Toggle Today / Last 7 Days -->
+    <RadioGroup
+        android:id="@+id/rangeGroupSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <RadioButton
+            android:id="@+id/rbTodaySteps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/today1"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rbLast7Steps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Last 7 Days"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+    <!-- Empty state -->
+    <TextView
+        android:id="@+id/tvEmptySteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_step_logs"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="8dp" />
+
+    <!-- List of step entries -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSteps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_mood_gradient"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvMoodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_are_you_feeling_today"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Mood buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnHappy"
+            style="@style/MoodButtonStyle"
+            android:text="😃 Happy"
+            android:textSize="24sp"
+            android:padding="14dp"/>
+
+        <Button
+            android:id="@+id/btnEnergized"
+            style="@style/MoodButtonStyle"
+            android:text="⚡ Energized"
+            android:textSize="24sp"
+            android:padding="14dp"/>
+
+        <Button
+            android:id="@+id/btnFrustrated"
+            style="@style/MoodButtonStyle"
+            android:text="😠 Frustrated"
+            android:textSize="24sp"
+            android:padding="14dp"/>
+
+        <Button
+            android:id="@+id/btnOverwhelmed"
+            style="@style/MoodButtonStyle"
+            android:text="😵 Overwhelmed"
+            android:textSize="24sp"
+            android:padding="14dp"/>
+
+        <Button
+            android:id="@+id/btnPeaceful"
+            style="@style/MoodButtonStyle"
+            android:text="😌 Peaceful"
+            android:textSize="24sp"
+            android:padding="14dp"/>
+
+        <Button
+            android:id="@+id/btnMotivated"
+            style="@style/MoodButtonStyle"
+            android:text="💪 Motivated"
+            android:textSize="24sp"
+            android:padding="14dp"/>
+    </LinearLayout>
+
+    <!-- Mood history list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMoods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="24dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"/>
+</LinearLayout>

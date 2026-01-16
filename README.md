@@ -63,11 +63,3 @@ It is designed to help users build healthy habits, track daily activities, and i
 LifePulse was developed to promote healthy habit formation and lifestyle awareness while strengthening practical Android development skills using Kotlin.
 
 ---
-
-## ▶️ How to Run
-1. Clone the repository
-2. Open the project in Android Studio
-3. Sync Gradle files
-4. Run the app on an emulator or physical Android device
-
----
